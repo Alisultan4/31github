@@ -11,3 +11,26 @@
 
 # Выходные данные
 # Выведите единственное целое число — количество нерасследованных преступлений.
+
+def unresolved_crimes(events):
+    police_available = 0
+    unresolved_count = 0
+
+    for event in events:
+        if event == -1:
+            if police_available > 0:
+                police_available -= 1
+            else:
+                unresolved_count += 1
+        else:
+            police_available += event
+
+    return unresolved_count
+
+# Чтение входных данных
+n = int(input())
+events = list(map(int, input().split()))
+
+# Вычисление и вывод результата
+result = unresolved_crimes(events)
+print(result)

@@ -1,3 +1,5 @@
+from random import *
+
 hw =  print('Hello world')
 c = 'nurik'
 b = 'sandzhik'
@@ -19,5 +21,8 @@ u = 'adilet'
 v = 'yunus'
 w = 'atai'
 x = 'nurhan'
-elevenC = a,b,c,d,e,f,g,i,j,k,l,m,n,o,p,t,u,v,w,x
-print(f'{hw}-{elevenC}')
+
+ran = random.randint(0,20)
+
+elevenC = [a,b,c,d,e,f,g,i,j,k,l,m,n,o,p,t,u,v,w,x]
+print(f'{hw}-{elevenC[ran]}')
