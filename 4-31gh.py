@@ -12,6 +12,9 @@
 # Выходные данные
 # Выведите единственное целое число — количество нерасследованных преступлений.
 
+
+#The answer from ChatGPT
+
 def unresolved_crimes(events):
     police_available = 0
     unresolved_count = 0
