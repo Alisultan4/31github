@@ -1,0 +1,22 @@
+eleven_c = {
+    'beko': "Bekturgan",
+    'sand': "Sandzhar",
+    'nur': "Nurmuhammed",
+    'ars': "Arsen",
+    'at': 'Atanai',
+    'akh': 'Akhror',
+    'chik': 'Chyngyz',
+    'amir': 'Amir',
+    'ait': 'Aitemir',
+    'alis': 'Alisultan',
+    'akn': 'Akniyet',
+    'alizh': 'Alizhan',
+    'aim': 'Aiman',
+    'beka': 'Bektur',
+    'andr': 'Andrew/Ali',
+    'zh': 'Zhanay',
+    'adi': 'Adilet',
+    'yu': 'Yunus',
+    'atai': 'Atai',
+    'nurh': 'Nurhan'
+}
