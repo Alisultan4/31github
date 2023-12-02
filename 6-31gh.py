@@ -46,3 +46,51 @@
 
 # Выходные данные
 # Для каждого набора данных выведите одно число — ответ на задачу.
+
+
+def max_weight_difference(t, test_cases):
+    results = []
+
+    # Проходимся по каждому тестовому случаю
+    for _ in range(t):
+        n, weights = test_cases[_]
+        
+        # Сортируем массив весов коробок
+        weights.sort()
+
+        low, high = 1, n
+        result = 0
+
+        # Используем бинарный поиск
+        while low <= high:
+            mid = (low + high) // 2
+            total_weight = 0
+
+            # Вычисляем суммарный вес mid наиболее тяжелых коробок
+            for i in range(mid):
+                total_weight += weights[n - 1 - i]
+
+            # Обновляем результат, если текущая разница больше предыдущей
+            result = max(result, total_weight)
+            low = mid + 1
+
+        results.append(result)
+
+    return results
+
+
+if __name__ == "__main__":
+    t = int(input())
+    test_cases = []
+
+    # Считываем входные данные для каждого тестового случая
+    for _ in range(t):
+        n = int(input())
+        weights = list(map(int, input().split()))
+        test_cases.append((n, weights))
+
+    # Получаем результаты и выводим их
+    results = max_weight_difference(t, test_cases)
+
+    for res in results:
+        print(res)
