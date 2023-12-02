@@ -28,6 +28,6 @@ teachers = {"parv":"Parvozbek",
             "zhay":"Zhaykar",
             "akyl":"Akylbek",
             "kyl":"Kylych",
-            "":"",
-            "":"",
+            "med":"Meder",
+            "w":"",
             "":"",}
