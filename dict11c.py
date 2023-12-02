@@ -18,5 +18,16 @@ eleven_c = {
     'adi': 'Adilet',
     'yu': 'Yunus',
     'atai': 'Atai',
-    'nurh': 'Nurhan'
+    'nurh': 'Nurhan',
 }
+
+teachers = {"parv":"Parvozbek",
+            "dil":"Dilshad",
+            "maks":"Maksat",
+            "nurm":"Nurmambet",
+            "zhay":"Zhaykar",
+            "akyl":"Akylbek",
+            "kyl":"Kylych",
+            "":"",
+            "":"",
+            "":"",}
