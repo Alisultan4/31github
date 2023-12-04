@@ -15,3 +15,23 @@
 
 # Выходные данные
 # Выведите ровно n строк — описание того, как вы запишите лекцию в свою тетрадь. Слова лекции требуется выводить в том же порядке, что и во входных данных.
+
+n, m = map(int, input().split())
+
+# Создаем словари для соответствия слов между языками
+lang1_to_lang2 = {}
+lang2_to_lang1 = {}
+
+for i in range(m):
+    word_lang1, word_lang2 = input().split()
+    lang1_to_lang2[word_lang1] = word_lang2
+    lang2_to_lang1[word_lang2] = word_lang1
+
+lecture_words = input().split()
+
+# Записываем лекцию в соответствии с условиями задачи
+lecture_in_your_language = [lang1_to_lang2[word] if len(lang1_to_lang2[word]) < len(lang2_to_lang1[word]) else lang2_to_lang1[word] for word in lecture_words]
+
+# Выводим результат
+for word in lecture_in_your_language:
+    print(word)
