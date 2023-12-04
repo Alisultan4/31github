@@ -61,7 +61,7 @@ def max_weight_difference(t, test_cases):
         low, high = 1, n
         result = 0
 
-        # Используем бинарный поиск
+        # Используем бинарный поиск чуточуто
         while low <= high:
             mid = (low + high) // 2
             total_weight = 0
