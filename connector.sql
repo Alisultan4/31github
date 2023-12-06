@@ -13,4 +13,13 @@ CREATE TABLE IF NOT EXISTS users (
 INSERT INTO users (name, age) VALUES
     ('Alisultan', '16'),
     ('Bekturgan', '17'),
-    ('Aitemir','99');
+    ('Aitemir','99')
+    ('Andrew','17')
+    ('Amir','17')
+    ('Atanai','17')
+    ('Akhror','17')
+    ('Arsen','17')
+    ('Aiman','17')
+    ('Alizhan','17')
+    ('Akniyet','17')
+    ('Yunus','17');
