@@ -20,6 +20,7 @@ INSERT INTO users (name, age) VALUES
     ('Akhror','17'),
     ('Arsen','17'),
     ('Aiman','17'),
+    ('Edil','17'),
     ('Alizhan','17'),
     ('Akniyet','17'),
     ('Yunus','17'),
