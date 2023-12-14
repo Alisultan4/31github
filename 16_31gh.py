@@ -5,3 +5,37 @@
 
 # Выходные данные
 # Выведите единственное число — минимальное необходимое количество такси, чтобы отвезти всех ребят к Поликарпу.
+n = int(input())
+groups = list(map(int, input().split()))
+
+count_1 = groups.count(1)
+count_2 = groups.count(2)
+count_3 = groups.count(3)
+count_4 = groups.count(4)
+
+# Машины для групп по четыре человека
+cars = count_4
+
+# Машины для групп по три человека
+cars += count_3
+
+# Машины для групп по два человека
+cars += count_2 // 2
+count_2 %= 2
+
+# Машины для групп по одному человеку
+if count_2 == 1:
+    cars += 1
+    count_1 -= 2
+elif count_2 == 0:
+    count_1 -= 4
+
+# Машины для оставшихся групп по одному человеку
+cars += (count_1 + 3) // 4
+
+print(cars)
+
+#to be honest
+#i need to prepare for my college application and toefl, and im just doing some code
+#like man come on
+#go and register for the toefl already
