@@ -9,3 +9,27 @@
 
 # Выходные данные
 # Выведите минимальный радиус освещения d, который необходим, чтобы осветить всю улицу. Ответ будет считаться правильным, если его абсолютная или относительная погрешность не превышает 10 - 9
+
+n, l = map(int, input().split())
+positions = sorted(list(map(int, input().split())))
+
+def can_illuminate(d):
+    # Проверяем, можно ли осветить всю улицу с текущим радиусом d
+    for i in range(1, n):
+        if positions[i] - positions[i-1] > 2*d:
+            return False
+    # Проверка для крайних фонарей
+    if positions[0] > d or l - positions[-1] > d:
+        return False
+    return True
+
+left, right = 0, l
+
+while right - left > 1e-9:
+    mid = (left + right) / 2
+    if can_illuminate(mid):
+        right = mid
+    else:
+        left = mid
+
+print("{:.9f}".format(left))
