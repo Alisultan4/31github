@@ -10,3 +10,17 @@
 
 #я бы решил эту задачку, но ноута рядом нет
 
+n = int(input())
+coordinates_set = set()
+
+for _ in range(n):
+    x, d = map(int, input().split())
+    if x + d in coordinates_set or x - d in coordinates_set:
+        print("YES")
+        break
+    coordinates_set.add(x)
+    coordinates_set.add(x + d)
+
+else:
+    print("NO")
+
