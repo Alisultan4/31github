@@ -24,3 +24,4 @@ for _ in range(n):
 else:
     print("NO")
 
+#final day yayyyy
