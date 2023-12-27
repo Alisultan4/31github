@@ -10,3 +10,7 @@ for i in range(1,120,12):
         print("Sanzhar helloo")
     else:
         print("Just as I expected")
+
+
+
+#man man man
