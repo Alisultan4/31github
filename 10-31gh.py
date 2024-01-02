@@ -15,3 +15,4 @@
 #I have SAT tomorrow, Wish me luck
 #well, i got 1350
 #710 on english and 640 on math
+#i wanted more, but that is alright
